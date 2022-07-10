@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Ping Pong</title>
+	<style>
+		#playground {
+			background: #feffe0;
+			width: 600px;
+			height: 300px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		#ball {
+			background: #fbb;
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			left: 200px;
+			top: 150px;
+			border-radius: 20px;
+		}
+
+		.paddle {
+			background: #bbf;
+			left: 100px;
+			top: 100px;
+			position: absolute;
+			width: 30px;
+			height: 150px;
+		}
+
+		#paddleB {
+			left: 400px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Enjoy the Best !Ping Pong!</h1>
+	</header>
+	<div id="game">
+		<div id="scoreboard">
+			<div class="score">Player 1 : <span id="score1">0</span></div>
+			<div class="score">Player 2 : <span id="score2">0</span></div>
+		</div>
+		<div id="playground">
+			<div id="paddleA" class="paddle"></div>
+			<div id="paddleB" class="paddle"></div>
+			<div id="ball"></div>
+		</div>
+		<div id="spectators"></div>
+	</div>
+	<footer>
+		This is an example to show basic control of Ping Pong.
+	</footer>
+
+	<script src="js/jquery-1.4.3.js"></script>
+	<script src="js/html5games.pingpong.js"></script>
+</body>
+
+</html>
